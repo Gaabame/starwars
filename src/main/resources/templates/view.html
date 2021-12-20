@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HELLO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+    <!--    <link rel="stylesheet" type="text/css" href="/css/custom.css">-->
+<!--    <link rel="stylesheet" th:href="@{/css/custom.css}"/>-->
+    <style>
+        .buttonStyle {
+            background-color: mediumvioletred;
+        }
+    </style>
+<!--    <script type="text/javascript" src="/js/adding.js"></script>-->
+
+    <script>
+        function myButton() {
+            alert("Button clicked.")
+        }
+
+        function add(num1, num2) {
+            let a = document.getElementById("num1").value
+            let b = document.getElementById("num2").value
+            let result = +a + +b
+            alert("Sum is: " + result)
+        }
+
+        function multiply(num1, num2) {
+            let a = document.getElementById("num1").value
+            let b = document.getElementById("num2").value
+            let result = +a * +b
+            alert("The result is: " + result)
+        }
+
+    </script>
+</head>
+<body>
+
+<h3>Hello there!</h3>
+<div class="buttonStyle">
+    <input type="button" onclick="myButton()" value="Button1" name="button">
+</div>
+<!--<p>Is not working:</p>-->
+<!--<input type="button" onclick="mySecondButton()" value="Button2" name="button2">-->
+
+<p></p>
+<label for="num1">Please enter first number</label>
+<input type="text" id="num1">
+<label for="num2">Please enter second number</label>
+<input type="text" id="num2">
+<button class="btn btn-primary" type="submit" onclick="add('num1', 'num2')">Add numbers</button>
+
+
+</body>
+</html>
