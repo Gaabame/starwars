@@ -1,1 +1,1 @@
-Just for my practice purpose: API, Spring Security
+🔨 Just for my practice purposes: API, Spring Security
